@@ -31,6 +31,15 @@ function addNewBook(){
 
 	showPerticularBook(newBook, library.length-1);
 	document.getElementById("totalBooks").innerHTML = `Total Books :  ${library.length}`;
+	resetFormValues();
+}
+
+function resetFormValues() {
+	document.getElementById("bookTitle_id").value ='';
+	document.getElementById("bookAuthor_id").value='';
+	document.getElementById("noOfPages_id").value='';
+	document.getElementById("yes").checked = false;
+	document.getElementById("no").checked = false;
 }
 
 function showAllBooks(){
