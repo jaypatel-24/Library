@@ -9,24 +9,37 @@
 
 	<div class="container">
 		<div class="header"> <p>Project Library</p> </div>
-		<p id ="bookCount">Total Books : </p>
+		<p id ="totalBooks">Total Books : 0</p>
 	</div>	
 
-	<div class ="subHeader">
-		<button id = "showBooks" >Show Books</button>
-		<button id = "addBook" onclick="openForm()">Add Books</button>
-	</div>
+	
 
 	<div id="formClass">
 		<form id = "form1" method="post" action="">
-            <p><input id="bookTitle_id" class="input" type="text" placeholder="Book Title"></p>
-			<p><input id ="bookAuthor_id" class="input" type="text" placeholder="Book Author"></p>
-			<p><input id ="nop_id" class="input" type="text" placeholder="No of pages"></p>
-			<p><button id="addButton">ADD</button></p>
+			<ul>
+             <li><input id="bookTitle_id" class="input" type="text" placeholder="Book Title"></li>
+			 <li><input id ="bookAuthor_id" class="input" type="text" placeholder="Book Author"></li>
+			 <li><input id ="nop_id" class="input" type="number" placeholder="No of pages"></li>
+
+			
+
+			<li>
+				<div class="readStatus pull-left">
+				reading status:<br>
+  				<label for="yes">Yes</label>				
+  				<input type="radio" id="yes" name="readStatus" value="yes">
+  				<label for="no">No</label>			
+  				<input type="radio" id="no" name="readStatus" value="no">
+  				</div>
+  			</li><br>
+
+			<li><input type="button" id="addBook" value="ADD"></li>
+			</ul>
 
 		</form>	
 	</div>
 
+<div class="table1">
 
 	<table class = "bookTable" border="solid">
 		<thead>
@@ -34,6 +47,8 @@
 				<th>Book Title</th>
 				<th>Book Author</th>
 				<th>No of Pages</th>
+				<th>Delete</th>
+				<th>Read Status</th>
 			</tr>
 		</thead>
 
@@ -41,10 +56,7 @@
 			
 		</tbody>
 	</table>	
-
-	<p id ="here"><p>
-
-
+</div>	
 
 <script src="library.js"></script>
 </body>
