@@ -19,9 +19,7 @@
 			<ul>
              <li><input id="bookTitle_id" class="input" type="text" placeholder="Book Title"></li>
 			 <li><input id ="bookAuthor_id" class="input" type="text" placeholder="Book Author"></li>
-			 <li><input id ="nop_id" class="input" type="number" placeholder="No of pages"></li>
-
-			
+			 <li><input id ="noOfPages_id" class="input" type="number" placeholder="No of pages"></li>
 
 			<li>
 				<div class="readStatus pull-left">
@@ -33,7 +31,7 @@
   				</div>
   			</li><br>
 
-			<li><input type="button" id="addBook" value="ADD"></li>
+			<li><input type="button" id="addNewBook" value="ADD"></li>
 			</ul>
 
 		</form>	
@@ -49,10 +47,11 @@
 				<th>No of Pages</th>
 				<th>Delete</th>
 				<th>Read Status</th>
+				<th>Change Read Status</th>
 			</tr>
 		</thead>
 
-		<tbody id="bookMenu">
+		<tbody id="listOfBooks">
 			
 		</tbody>
 	</table>	
