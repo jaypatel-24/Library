@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="library.css">
+	<title>Library</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="header"> <p>Project Library</p> </div>
+		<p id ="bookCount">Total Books : </p>
+	</div>	
+
+	<div class ="subHeader">
+		<button id = "showBooks" >Show Books</button>
+		<button id = "addBook" onclick="openForm()">Add Books</button>
+	</div>
+
+	<div id="formClass">
+		<form id = "form1" method="post" action="">
+            <p><input id="bookTitle_id" class="input" type="text" placeholder="Book Title"></p>
+			<p><input id ="bookAuthor_id" class="input" type="text" placeholder="Book Author"></p>
+			<p><input id ="nop_id" class="input" type="text" placeholder="No of pages"></p>
+			<p><button id="addButton">ADD</button></p>
+
+		</form>	
+	</div>
+
+
+	<table class = "bookTable" border="solid">
+		<thead>
+			<tr>
+				<th>Book Title</th>
+				<th>Book Author</th>
+				<th>No of Pages</th>
+			</tr>
+		</thead>
+
+		<tbody id="bookMenu">
+			
+		</tbody>
+	</table>	
+
+	<p id ="here"><p>
+
+
+
+<script src="library.js"></script>
+</body>
+</html>
