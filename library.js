@@ -46,8 +46,8 @@ function openForm(){
 		x.style.display = "none";
 }
 
-document.querySelector('#addButton').addEventListener("click", addNewBook);
-document.querySelector('#showBooks').addEventListener("click", showAllBooks);
+document.querySelector('#addBook').addEventListener("click", addNewBook);
+// document.querySelector('#showBooks').addEventListener("click", showAllBooks);
 
 /*
 
